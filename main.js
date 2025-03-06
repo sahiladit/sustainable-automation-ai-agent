@@ -60,5 +60,13 @@ async function processEnergyData() {
     });
 }
 
+// Execute the function and write the result to a JSON file
+processEnergyData().then(data => {
+    fs.writeFileSync('./processed_data.json', JSON.stringify(data, null, 2));
+    console.log('Data written to processed_data.json');
+}).catch(error => {
+    console.error('Error:', error);
+});
+
 // Export the function for use in lr.html
 export { processEnergyData };
