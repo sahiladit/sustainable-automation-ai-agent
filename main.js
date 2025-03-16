@@ -15,10 +15,11 @@ async function main() {
     const decision = await model.shouldTurnOff(usageData);
 
     console.log("🔋 Energy Decision System 🔋");
-    console.log("📊 Current Usage Pattern:", usageData);
+    console.log("📦 Current Usage Pattern:", usageData);
     console.log("✅ Decision:", decision.decision.toUpperCase());
     console.log("⚡ Daily Energy Saved:", decision.dailySavedEnergy);
     console.log("🌍 Yearly Energy Saved:", decision.yearlySavedEnergy);
+    console.log("🚀 Energy Efficiency Score:", decision.averageEES); // Corrected to use averageEES instead of energyEfficiencyScore
 }
 
 main().catch(console.error);
