@@ -1,7 +1,3 @@
-Here’s a **well-formatted README.md** file with **proper steps and a comparison table** for your repository:  
-
----
-
 # **Sustainable Automation AI Agent**  
 🚀 **An AI-powered decision-making system for optimizing IoT energy consumption**  
 
